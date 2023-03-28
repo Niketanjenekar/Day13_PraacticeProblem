@@ -29,7 +29,7 @@ namespace GenericProblems
             //**************************************************************************
             //Usecase 1.1
             int num1 = 54; 
-            int num2 = 53; 
+            int num2 = 99; 
             int num3 = 23;
 
             FindMaximum obj = new FindMaximum();
