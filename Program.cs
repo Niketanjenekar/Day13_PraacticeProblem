@@ -54,17 +54,41 @@ namespace GenericProblems
             //Console.WriteLine("{0} is the Greater Value", value);
             //**********************************************************************
             //Usecase4:-
-            Console.WriteLine("Please enter the First number");
-            var num1 = Console.ReadLine();
-            Console.WriteLine("Please enter the Second number");
-            var num2 = Console.ReadLine();
-            Console.WriteLine("Please enter the Third number");
-            var num3 = Console.ReadLine();
+            //Console.WriteLine("Please enter the First number");
+            //var num1 = Console.ReadLine();
+            //Console.WriteLine("Please enter the Second number");
+            //var num2 = Console.ReadLine();
+            //Console.WriteLine("Please enter the Third number");
+            //var num3 = Console.ReadLine();
 
-            //FindMaxUsingGenerics data = new FindMaxUsingGenerics();
+            ////Refactor-1:-
 
-            var value = FindMaxUsingGenerics.FindingMaximum( num1,  num2, num3 );
-            Console.WriteLine("{0} is the greater value : " + value);
+            //var value = FindMaxUsingGenerics.FindingMaximum( num1,  num2, num3 );
+            //Console.WriteLine("{0} is the greater value : " + value);
+
+            //Refactor-2:-
+
+            int num1 = 10, num2 = 20, num3 = 15;
+            double dub1 = 1.9, dub2 = 6.3, dub3 = 3.4;
+            string char1 = "Apple", char2 = "Banana", char3 = "Peach";
+
+            RefactorUsingGenerics<int> obj = new RefactorUsingGenerics<int>(num1, num2, num3);
+            int MaxInt = obj.FindingMaximum<int>();
+            Console.WriteLine("Maximum value in integer is: " + MaxInt);
+
+            Console.WriteLine("****************************************");
+
+            RefactorUsingGenerics<double> obj1 = new RefactorUsingGenerics<double>();
+            double MaxDouble = obj1.FindingMaximum<double>(dub1, dub2, dub3);
+            Console.WriteLine("Maximum value in double is: " + MaxDouble);
+
+            Console.WriteLine("****************************************");
+
+            RefactorUsingGenerics<string> obj2 = new RefactorUsingGenerics<string>();
+            string MaxString = obj2.FindingMaximum<string>(char1, char2, char3);
+            Console.WriteLine("Maximum value in string is: " + MaxString);
+
+            Console.WriteLine("****************************************");
         }
     }
 }
