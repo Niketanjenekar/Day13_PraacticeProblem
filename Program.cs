@@ -37,8 +37,8 @@ namespace GenericProblems
             //Console.WriteLine("{0} is the Greater Value", value);
             //******************************************************************************
             //Use case2;-
-            double num1 = 9.8;
-            double num2 = 9.9;
+            double num1 = 0.8;
+            double num2 = 0.4;
             double num3 = 1.9;
             FindFloatMaximum num = new FindFloatMaximum();
             double value = FindFloatMaximum.FindingFloatMaximum(num1, num2, num3);
