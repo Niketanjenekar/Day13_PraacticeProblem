@@ -1,11 +1,12 @@
 ﻿using Day_13_GenericProblems;
 using System.Reflection.Metadata;
+using System;
 
 namespace GenericProblems
 {
     class Program
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
             //int[] intArray = { 1, 2, 3, 4 };
             ////double[] doubleArray = { 1.01, 2.02, 3.03, 4.04 };
@@ -45,13 +46,25 @@ namespace GenericProblems
             //Console.WriteLine("{0} is the Greater Value", value);
             ////******************************************************************
             //Usecase3:-
-            string word1 = "Peach";
-            string word2 = "Apple";
-            string word3 = "Banana";
-            FindStringMaximum num = new FindStringMaximum();
-            string value = FindStringMaximum.FindingStringMaximum(word1, word2, word3);
-            Console.WriteLine("{0} is the Greater Value", value);
+            //string word1 = "Peach";
+            //string word2 = "Apple";
+            //string word3 = "Banana";
+            //FindStringMaximum num = new FindStringMaximum();
+            //string value = FindStringMaximum.FindingStringMaximum(word1, word2, word3);
+            //Console.WriteLine("{0} is the Greater Value", value);
+            //**********************************************************************
+            //Usecase4:-
+            Console.WriteLine("Please enter the First number");
+            var num1 = Console.ReadLine();
+            Console.WriteLine("Please enter the Second number");
+            var num2 = Console.ReadLine();
+            Console.WriteLine("Please enter the Third number");
+            var num3 = Console.ReadLine();
 
+            //FindMaxUsingGenerics data = new FindMaxUsingGenerics();
+
+            var value = FindMaxUsingGenerics.FindingMaximum( num1,  num2, num3 );
+            Console.WriteLine("{0} is the greater value : " + value);
         }
     }
 }
