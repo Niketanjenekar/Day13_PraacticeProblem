@@ -45,9 +45,9 @@ namespace GenericProblems
             //Console.WriteLine("{0} is the Greater Value", value);
             ////******************************************************************
             //Usecase3:-
-            string word1 = "Bananaa";
-            string word2 = "Peach";
-            string word3 = "Apple";
+            string word1 = "Peach";
+            string word2 = "Apple";
+            string word3 = "Banana";
             FindStringMaximum num = new FindStringMaximum();
             string value = FindStringMaximum.FindingStringMaximum(word1, word2, word3);
             Console.WriteLine("{0} is the Greater Value", value);
