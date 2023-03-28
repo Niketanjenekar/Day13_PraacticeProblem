@@ -1,4 +1,5 @@
 ﻿using Day_13_GenericProblems;
+using System.Reflection.Metadata;
 
 namespace GenericProblems
 {
@@ -28,12 +29,19 @@ namespace GenericProblems
             //int num3 = Convert.ToInt32(Console.ReadLine());
             //**************************************************************************
             //Usecase 1.1
-            int num1 = 54; 
-            int num2 = 99; 
-            int num3 = 200;
-
-            FindMaximum obj = new FindMaximum();
-            int value = FindMaximum.FindingMaximum(num1, num2, num3);
+            //int num1 = 4.3;
+            //int num2 = 9.6;
+            //int num3 = 1.9;
+            //FindMaximum obj = new FindMaximum();
+            //int value = FindMaximum.FindingMaximum(num1, num2, num3);
+            //Console.WriteLine("{0} is the Greater Value", value);
+            //******************************************************************************
+            //Use case2;-
+            double num1 = 4.3;
+            double num2 = 9.6;
+            double num3 = 1.9;
+            FindFloatMaximum num = new FindFloatMaximum();
+            double value = FindFloatMaximum.FindingFloatMaximum(num1, num2, num3);
             Console.WriteLine("{0} is the Greater Value", value);
         }
     }
