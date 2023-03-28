@@ -30,7 +30,7 @@ namespace GenericProblems
             //Usecase 1.1
             int num1 = 54; 
             int num2 = 99; 
-            int num3 = 23;
+            int num3 = 200;
 
             FindMaximum obj = new FindMaximum();
             int value = FindMaximum.FindingMaximum(num1, num2, num3);
