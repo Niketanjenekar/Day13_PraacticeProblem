@@ -37,13 +37,20 @@ namespace GenericProblems
             //Console.WriteLine("{0} is the Greater Value", value);
             //******************************************************************************
             //Use case2;-
-            double num1 = 0.8;
-            double num2 = 0.4;
-            double num3 = 1.9;
-            FindFloatMaximum num = new FindFloatMaximum();
-            double value = FindFloatMaximum.FindingFloatMaximum(num1, num2, num3);
+            //double num1 = 0.8;
+            //double num2 = 0.4;
+            //double num3 = 1.9;
+            //FindFloatMaximum num = new FindFloatMaximum();
+            //double value = FindFloatMaximum.FindingFloatMaximum(num1, num2, num3);
+            //Console.WriteLine("{0} is the Greater Value", value);
+            ////******************************************************************
+            //Usecase3:-
+            string word1 = "Apple";
+            string word2 = "Peach";
+            string word3 = "Banana";
+            FindStringMaximum num = new FindStringMaximum();
+            string value = FindStringMaximum.FindingStringMaximum(word1, word2, word3);
             Console.WriteLine("{0} is the Greater Value", value);
-
 
         }
     }
